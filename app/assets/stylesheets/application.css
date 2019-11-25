@@ -1,0 +1,245 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+    font-weight: lighter;
+  
+}
+.top-right a{
+    text-decoration: none;
+    color: #F299B9;
+    
+}
+.top-right a:hover{
+    color: #D979B7;
+    font-weight: bold;
+}
+header img{
+    width: 300px;
+    height: 60px;
+}
+header button{
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    border-style: solid;
+    font-size: 18pt;
+}
+.headbutton1{
+    border: 2px solid #D979B7;
+    color: #D979B7;
+}
+.headbutton2{
+    background-color: #FEE4E9;
+    border-color: #FEE4E9;
+    color: #D979B7;
+    padding: 10px 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin:0;
+    background: #D979B7;
+    list-style-type: none;
+  }
+
+nav a{
+    text-decoration: none;
+    color: #FEE4E9; 
+     font-size: 15pt;
+}
+nav a:hover{
+    color: white;
+}
+.mainCont{
+    background-image: url("/assets/donut_img4.jpg");
+     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+     text-align: center;
+    color: #fff;
+    
+  }
+
+.mainCont h1 {
+    /* Text styles */
+    font-size: 3em;
+    /* Margins */
+    margin-bottom: 20px;
+    text-shadow:2px 5px 15px #000;
+}
+.mainCont h2{
+    text-shadow:2px 5px 15px #000;
+}
+
+.mainCont button {
+    display: block;
+    padding: 30px;
+    width:200px;
+    margin:0 30px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #D979B7;
+    border-radius: 20px;
+    color: #D979B7;
+    background-color: white;
+    text-decoration: none;
+    font-size: 15pt;
+}
+.homebuttons{
+    display:flex;
+    flex-direction:row;
+}
+  footer{
+    background-color: #D979B7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #f1f1f1;
+    
+}
+  footer img{
+    width: 220px;
+    height: 60px;
+    margin-top: 50px;
+}
+footer ul{
+    list-style-type: none;
+       display: flex;
+    flex-direction: column;
+   background-color: #FEE4E9;
+   color: #D979B7;
+    font-size: 15pt;
+}
+footer a{
+    text-decoration: none;
+    color: #8f888c;
+}
+footer a:hover{
+    color:#D979B7;
+}
+.foot{
+    background-color: #FEE4E9;
+   
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18pt;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #D979B7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    border-style: solid;
+    font-size: 15pt;
+  
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+form .field{
+    font-size: 15pt;
+    font-weight: bold;
+}
+.empty_msg{
+    text-align: center;
+}
+
+.headbutton3{
+    border: 2px solid #D979B7;
+    color: #D979B7;
+    padding: 10px 30px;
+}
+.headbutton4{
+    background-color: #FEE4E9;
+    border-color: #FEE4E9;
+    color: #D979B7;
+    padding: 10px 30px;
+}
+.aboutus {
+    padding:10% 20%;
+    height: 200pt;
+    font-size: 18pt;
+}
+.aboutus p{
+    font-size: medium;
+    text-align: justify;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.top-right li{
+    list-style: none;
+}

@@ -1,0 +1,69 @@
+// Place all the styles related to the Items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+     font-family: 'Roboto', sans-serif;
+}
+#itemsContainer h1 {
+   display: block;
+    color: #504E54;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.itemhols {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 20%;
+    padding:10px;
+    min-height: 300px;
+   
+}
+.itemhols h1 {
+   display: block;
+    color: #8C8A94;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+    
+}
+.itemhols p {
+   display: block;
+    color: #504E54;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+.button {
+    background-color: #D979B7;
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    border-radius: 16px;
+    border-style: solid 1px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.itemholsIm {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+

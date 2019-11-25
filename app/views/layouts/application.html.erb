@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=yield(:title)%>| DonutHut</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  </head>
+
+
+<body>
+  <header class="header">
+        <div class="logo">
+            <%=link_to image_tag("donuthut_logo.png", alt: "DonutHut Logo"), "/" %>
+        </div> 
+        
+        <div class="top-right">
+          
+          
+        <% if user_signed_in? %>
+                  <li><a href="#">Hi <%= current_user.email %></a></li>
+                 <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+                 <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+          <button class="headbutton1" type="button"><%= link_to 'Register', new_user_registration_path %></button> 
+          <button class="headbutton2" type="button"><%= link_to 'Login', new_user_session_path %></button>
+          <% end %>
+          
+          
+          
+          
+           <% if session[:login] == 1 %> 
+        <li><%= link_to "Admin Logout", logout_path %></li>
+        <% else %>
+        
+        <li><%= link_to "Admin Login", login_path %></li>
+        <% end %>
+        
+        
+        
+
+          
+        </div>
+  </header>
+  
+  <nav>
+      <ul>
+        <a><li><%= link_to "HOME",'/' %></li></a>
+        <a><li><%= link_to "ABOUT", about_path %></li></a>
+        <a><li><%= link_to "DONUTS", items_path %></li></a>
+        <a><li><%= link_to "ORDER", orders_path %></li></a>
+        <a><li><%= link_to "CONTACT US", contact_path %></li></a>
+
+      </ul>
+
+
+   </nav> 
+   
+    <div class="mainCont_1">
+    <%= yield %>
+    </div>
+    
+    
+    <footer class="foot">
+ 
+          <div class="footer-col1">
+          <%=link_to image_tag("donuthut_logo.png", alt: "DonutHut Logo"), "/" %>
+          </div>
+          <div class="footer-col2">
+            <ul>
+                <li><h3>Social Media</h3></li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-col3">
+            <ul>
+                <li><h3>Links</h3></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+   
+    </footer>
+    
+  </body>
+</html>
