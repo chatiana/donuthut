@@ -80,6 +80,18 @@ class CartController < ApplicationController
     redirect_to :action => :index
   end
   
+  
+#########Increase the quantity ###############
+    def increase
+    
+    id = params[:id]
+    cart = session[:cart]
+     cart[id] = cart[id] + 1
+     #Taking us to cart index[view] page
+    redirect_to :action => :index
+    end
+  
+  
 ######## Create Order method ########  
   def createOrder
  # Step 1: Get the current user

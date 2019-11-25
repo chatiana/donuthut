@@ -37,6 +37,7 @@ Rails.application.routes.draw do
  get '/clearcart', to: 'cart#clearCart'
  get '/cart/remove/:id' => 'cart#remove'
  get '/cart/decrease/:id' => 'cart#decrease'
+ get '/cart/increase/:id' => 'cart#increase'
  
  root :to => 'site#home'
   

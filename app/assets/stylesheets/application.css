@@ -243,3 +243,7 @@ input[type=submit]:hover {
 .top-right li{
     list-style: none;
 }
+#customers{
+    display: flex;
+    justify-content:center;
+}
