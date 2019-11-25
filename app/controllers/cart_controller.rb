@@ -95,9 +95,8 @@ class CartController < ApplicationController
  item = Item.find_by_id(id)
  @orderitem = @order.orderitems.build(:item_id => item.id, :title => item.title, :description => item.description, :quantity => quantity, :price=> item.price)
  @orderitem.save
- end
- #redirect_to '/orderConfirmed/'#
- @orderitems = Orderitem.where(order_id: Order.last)
   end
-
+  @orders = Order.all
+  @orderitems = Orderitem.where(order_id:Order.last)
+  end
 end
