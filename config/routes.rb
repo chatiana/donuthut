@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   end
   
   get '/checkout' => 'cart#createOrder'
+  get '/paid/:id' => 'static_pages#paid'
   
   get 'cart/index'
 
@@ -38,6 +39,8 @@ Rails.application.routes.draw do
  get '/cart/remove/:id' => 'cart#remove'
  get '/cart/decrease/:id' => 'cart#decrease'
  get '/cart/increase/:id' => 'cart#increase'
+
+
  
  root :to => 'site#home'
   
